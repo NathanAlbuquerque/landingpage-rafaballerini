@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    /* font-size: 100%; */
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+}
+
+/* HEADER ********** ********** ********** */
+/* ********** ********** ********** */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.header .header-logo {
+    height: 72px;
+}
+.header .header-nav {
+    display: flex;
+    gap: 32px;
+}
+.header .header-nav .header-nav-link {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFF2E7;
+    cursor: pointer;
+    transition: .2s;
+    transition-delay: .1s;
+}
+.header .header-nav .header-nav-link:hover {
+    opacity: .8;
+}
+/* FIM HEADER ********** */
+
+
+
+/* MAIN ********** ********** ********** */
+/* ********** ********** ********** */
+.main {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+.main .main-cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .main-cta .main-cta-chamada {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.main .main-cta .main-cta-chamada .main-cta-chamada-titulo {
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 64px;
+}
+.main .main-cta .main-cta-chamada .main-cta-chamada-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    color: #ECD6C4;
+    font-weight: 400;
+    font-size: 24px;
+}
+.main .main-cta .main-cta-chamada .main-cta-chamada-btncta {
+    width: 180px;
+    height: 60px;
+    background-color: #ECD6C4;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #2F2325;
+    font-weight: 400;
+    font-size: 24px;
+    box-shadow: 4px 5px 4px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    transition: .3s;
+    transition-delay: .1s;
+}
+.main .main-cta .main-cta-chamada .main-cta-chamada-btncta:hover {
+    opacity: .7;
+}
+.main .main-cta .main-cta-imagem {
+    height: 430px;
+}
+.main .main-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.main .main-sobre .main-sobre-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    margin-bottom: 18px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    color: #FFF2E7;
+    font-size: 24px;
+}
+.main .main-sobre .main-sobre-texto {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+/* FIM MAIN ********** */
+
+
+
+/* FOOTER ********** ********** ********** */
+/* ********** ********** ********** */
+.footer {
+    border-top: 0.4px solid #FFF2E7;
+    padding: 32px 0;
+}
+.footer .footer-logo {
+    height: 48px;
+    display: block;
+    margin: auto;
+}
+/* FIM FOOTER ********** */
