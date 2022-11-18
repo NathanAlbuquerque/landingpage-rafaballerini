@@ -1,16 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+/*
+    Created by: Nathan Albuquerque
+    Version: 1.1
 
+    Map:
+    1. Geral
+    2. Header
+    3. Main
+    4. Footer
+    5. Responsivo
+*/
+
+/* GERAL ********** ********** ********** */
+/* ********** ********** ********** */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
 body {
     /* font-size: 100%; */
     background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
 }
+/* FIM GERAL ********** */
+
 
 /* HEADER ********** ********** ********** */
 /* ********** ********** ********** */
@@ -130,3 +144,156 @@ body {
     margin: auto;
 }
 /* FIM FOOTER ********** */
+
+
+/* RESPONSIVO ********** ********** ********** */
+/* ********** ********** ********** */
+@media only screen and (max-width: 992px) {
+    /* HEADER */
+    .header {
+        padding: 18px;
+    }
+    .header .header-logo {
+        height: 64px;
+    }
+    .header .header-nav {
+        gap: 24px;
+    }
+    .header .header-nav .header-nav-link {
+        font-size: 16px;
+    }
+    /* MAIN */
+    .main .main-cta .main-cta-chamada {
+        gap: 32px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-titulo {
+        font-size: 56px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-subtitulo {
+        font-size: 18px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-btncta {
+        width: 160px;
+        height: 48px;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+    .main .main-cta .main-cta-imagem {
+        height: 380px;
+    }
+    .main .main-sobre {
+        gap: 22px;
+        margin-top: 44px;
+    }
+    .main .main-sobre .main-sobre-titulo {
+        font-size: 22px;
+    }
+    .main .main-sobre .main-sobre-texto {
+        font-size: 14px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 30px 0;
+    }
+    .footer .footer-logo {
+        height: 44px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* HEADER */
+    .header {
+        padding: 12px;
+    }
+    .header .header-logo {
+        height: 48px;
+    }
+    .header .header-nav {
+        display: none;
+    }
+    /* MAIN */
+    .main .main-cta {
+        flex-direction: column;
+    }
+    .main .main-cta .main-cta-chamada {
+        margin-top: 36px;
+        gap: 24px;
+        text-align: center;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-titulo {
+        font-size: 48px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-subtitulo {
+        font-size: 16px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-btncta {
+        font-size: 18px;
+        margin: auto;
+    }
+    .main .main-cta .main-cta-imagem {
+        margin-top: 12px;
+    }
+    .main .main-sobre .main-sobre-titulo {
+        padding-top: 36px;
+        margin-bottom: 12px;
+    }
+    .main .main-sobre .main-sobre-texto {
+        text-align: center;
+        max-width: 80%;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 24px 0;
+    }
+    .footer .footer-logo {
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    /* HEADER */
+    .header {
+        padding: 8px;
+    }
+    .header .header-logo {
+        height: 36px;
+    }
+    /* MAIN */
+    .main {
+        margin-bottom: 36px;
+    }
+    .main .main-cta .main-cta-chamada {
+        margin-top: 24px;
+        gap: 16px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-titulo {
+        font-size: 36px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-subtitulo {
+        font-size: 14px;
+    }
+    .main .main-cta .main-cta-chamada .main-cta-chamada-btncta {
+        width: 140px;
+        height: 42px;
+        font-size: 16px;
+    }
+    .main .main-cta .main-cta-imagem {
+        height: 260px;
+    }
+    .main .main-sobre {
+        margin-top: 40px;
+    }
+    .main .main-sobre .main-sobre-titulo {
+        padding-top: 36px;
+        font-size: 20px;
+    }
+    .main .main-sobre .main-sobre-texto {
+        line-height: 16px;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 16px 0;
+    }
+    .footer .footer-logo {
+        height: 24px;
+    }
+}
+/* FIM RESPONSIVO ********** */
